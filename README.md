@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isSameBooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-booleanarray@deno/mod.js';
+import isSameBooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-booleanarray@v0.1.0-deno/mod.js';
 ```
 
 #### isSameBooleanArray( v1, v2 )
@@ -79,7 +79,7 @@ bool = isSameBooleanArray( x, [ true, false ] );
 
 ```javascript
 import BooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@deno/mod.js';
-import isSameBooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-booleanarray@deno/mod.js';
+import isSameBooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-booleanarray@v0.1.0-deno/mod.js';
 
 var x = new BooleanArray( [ true, false, false, true ] );
 var y = new BooleanArray( [ true, false, false, true ] );
