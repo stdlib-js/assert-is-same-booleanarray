@@ -35,32 +35,14 @@ limitations under the License.
 
 > Test if two arguments are both [BooleanArrays][@stdlib/array/bool] and have the [same values][@stdlib/assert/is-same-value].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-is-same-booleanarray
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var isSameBooleanArray = require( '@stdlib/assert-is-same-booleanarray' );
+import isSameBooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-booleanarray@esm/index.mjs';
 ```
 
 #### isSameBooleanArray( v1, v2 )
@@ -68,7 +50,7 @@ var isSameBooleanArray = require( '@stdlib/assert-is-same-booleanarray' );
 Tests if two arguments are both [BooleanArrays][@stdlib/array/bool] and have the [same values][@stdlib/assert/is-same-value].
 
 ```javascript
-var BooleanArray = require( '@stdlib/array-bool' );
+import BooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@esm/index.mjs';
 
 var x = new BooleanArray( [ true, false ] );
 var y = new BooleanArray( [ true, false ] );
@@ -95,9 +77,14 @@ bool = isSameBooleanArray( x, [ true, false ] );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var BooleanArray = require( '@stdlib/array-bool' );
-var isSameBooleanArray = require( '@stdlib/assert-is-same-booleanarray' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import BooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@esm/index.mjs';
+import isSameBooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-booleanarray@esm/index.mjs';
 
 var x = new BooleanArray( [ true, false, false, true ] );
 var y = new BooleanArray( [ true, false, false, true ] );
@@ -108,6 +95,10 @@ x = new BooleanArray( [ true, false, false, true ] );
 y = new BooleanArray( [ true, true, false, false ] );
 out = isSameBooleanArray( x, y );
 // returns false
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -131,7 +122,7 @@ out = isSameBooleanArray( x, y );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -194,9 +185,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-same-booleanarray/main/LICENSE
 
-[@stdlib/array/bool]: https://github.com/stdlib-js/array-bool
+[@stdlib/array/bool]: https://github.com/stdlib-js/array-bool/tree/esm
 
-[@stdlib/assert/is-same-value]: https://github.com/stdlib-js/assert-is-same-value
+[@stdlib/assert/is-same-value]: https://github.com/stdlib-js/assert-is-same-value/tree/esm
 
 </section>
 
